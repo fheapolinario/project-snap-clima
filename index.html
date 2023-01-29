@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>SnapClima</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-search-bar-city">
+        <input
+          id="city-search-input"
+          class="header-input"
+          type="text"
+          placeholder="Temperatura de qual Cidade?"
+        />
+        <button id="city-search-button" class="header-button">
+          <img
+            class="header-button-icon"
+            src="./assets/search-icon.svg"
+            alt="Ícone de uma lupa para pesquisa"
+          />
+        </button>
+      </div>
+
+      <div id="current-date" class="header-current-date">...</div>
+      <div id="city-name" class="header-city-name">...</div>
+    </header>
+
+    <section class="current-temperature">
+      <img
+        class="current-temperature-weather-icon"
+        id="weather-icon"
+        src="./assets/loading-icon.svg"
+        aria-hidden="true"
+        alt="Ícone que ilustra a temperatura atual"
+      />
+      <div class="current-temperature-description" id="weather-description">
+        ...
+      </div>
+      <div class="current-temperature-info-label">Tempo Agora</div>
+      <div
+        class="current-temperature-current-temperature"
+        id="current-temperature"
+      >
+        ...
+      </div>
+    </section>
+
+    <div class="bottom-container">
+      <section class="temperature-details">
+        <div class="temperature-details-item">
+          <div class="temperature-details-label">Vento</div>
+          <div class="temperature-details-value" id="wind-speed">...</div>
+        </div>
+
+        <div class="temperature-details-item">
+          <div class="temperature-details-label">Sensação</div>
+          <div class="temperature-details-value" id="feels-like-temperature">
+            ...
+          </div>
+        </div>
+
+        <div class="temperature-details-item">
+          <div class="temperature-details-label">Umidade</div>
+          <div class="temperature-details-value" id="current-humidity">...</div>
+        </div>
+      </section>
+
+      <section class="sunset-sunrise">
+        <div class="sunset-sunrise-item">
+          <img
+            class="sunset-sunrise-icon"
+            src="./assets/sunrise.svg"
+            alt="Nascer do Sol"
+          />
+          <div class="sunset-sunrise-value" id="sunrise-time">...</div>
+        </div>
+
+        <div class="sunset-sunrise-item">
+          <img
+            class="sunset-sunrise-icon"
+            src="./assets/sunset.svg"
+            alt="Pôr do Sol"
+          />
+          <div class="sunset-sunrise-value" id="sunset-time">...</div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
